@@ -13,17 +13,15 @@
   -ms-transition: background-color 200ms linear;
   transition: background-color 300ms linear;
   background-color: #006bce;
-}
-
-.button-primary:hover {
-  -webkit-transition: background-color 200ms linear;
-  -ms-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
-  background-color: #2e9aff;
-}
-
-.button-primary:focus {
-  outline: 1px solid #004d95;
+  &:hover {
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+    background-color: #2e9aff;
+  }
+  &:focus {
+    outline: 1px solid #004d95;
+  }
 }
 
 .button-secondary {
@@ -32,17 +30,15 @@
   transition: background-color 200ms linear;
   background-color: inherit;
   border: 1px solid rgb(153, 153, 153);
-}
-
-.button-secondary:hover {
-  -webkit-transition: background-color 200ms linear;
-  -ms-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
-  background-color: #bbbbbb;
-}
-
-.button-secondary:focus {
-  outline: 1px solid #414141;
+  &:hover {
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+    background-color: #bbbbbb;
+  }
+  &:focus {
+    outline: 1px solid #5e5e5e;
+  }
 }
 
 .button-danger {
@@ -51,17 +47,16 @@
   transition: background-color 300ms linear;
   background-color: #b00000;
   color: #fff;
-}
-
-.button-danger:hover {
-  -webkit-transition: background-color 200ms linear;
-  -ms-transition: background-color 200ms linear;
-  transition: background-color 300ms linear;
-  background-color: #ee0000;
-  color: #fff;
-}
-.button-danger:focus {
-  outline: 1px solid #b90000;
+  &:hover {
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 300ms linear;
+    background-color: #ee0000;
+    color: #fff;
+  }
+  &:focus {
+    outline: 1px solid #b90000;
+  }
 }
 
 .button-success {
@@ -70,17 +65,18 @@
   transition: background-color 300ms linear;
   background-color: #00d636;
   color: #fff;
+  &:hover {
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 300ms linear;
+    background-color: #00ff40;
+    color: #fff;
+  }
+  &:focus {
+    outline: 1px solid rgb(0, 179, 110);
+  }
 }
-.button-success:hover {
-  -webkit-transition: background-color 200ms linear;
-  -ms-transition: background-color 200ms linear;
-  transition: background-color 300ms linear;
-  background-color: #00ff40;
-  color: #fff;
-}
-.button-success:focus {
-  outline: 1px solid rgb(0, 179, 110);
-}
+
 .button-xs {
   padding: 10px 21px;
   font-size: 12px;

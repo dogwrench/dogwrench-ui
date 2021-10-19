@@ -1,10 +1,11 @@
-import React from 'react';
-import './button.css';
+import React, { ButtonHTMLAttributes } from 'react';
+import { Size } from '../../types';
+import './button.scss';
 
-interface ButtonProps {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant: 'primary' | 'secondary' | 'danger' | 'success';
   backgroundColor?: string;
-  size?: 'xs' | 'sm' | 'md' | 'lg';
+  size?: Size;
   label: string;
 }
 
