@@ -18,3 +18,17 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: yarn install
       - run: yarn build:rollup
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+      - run: yarn install
+      - run: yarn build:rollup
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
