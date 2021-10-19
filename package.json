@@ -1,6 +1,6 @@
 {
   "name": "dogwrench-ui",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
@@ -34,7 +34,7 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build:storybook": "build-storybook",
+    "build:storybook": "build-storybook -o ./deploy",
     "build:rollup": "rollup -c"
   }
 }
