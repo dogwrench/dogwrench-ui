@@ -1,0 +1,38 @@
+.form-field-input {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-color: inherit;
+  color: #fff;
+  font-family: 'DM Sans';
+  font-size: 14px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.form-field-label {
+  font-family: 'DM Sans';
+  font-size: 11px;
+  color: #fff;
+}
+
+.form-field-input-container {
+}
+
+.form-field-label-container {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  justify-content: space-between;
+  margin: 3px 0;
+}
+
+.form-field-error {
+  font-family: 'DM Sans';
+  font-size: 11px;
+  color: rgb(255, 0, 0);
+  text-transform: uppercase;
+}
