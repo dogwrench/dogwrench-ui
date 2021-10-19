@@ -36,3 +36,14 @@
   color: rgb(255, 0, 0);
   text-transform: uppercase;
 }
+
+.form-field-wrapper {
+  border: 1px solid #ffffff24;
+  padding: 8px 16px;
+  background-color: #303030;
+  border-radius: 5px;
+}
+
+.form-field-wrapper-error {
+  border: 2px solid #cf0000;
+}
